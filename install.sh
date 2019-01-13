@@ -186,10 +186,7 @@ else
 	echo "Which protocol do you want for OpenVPN connections?"
 	echo "   1) UDP (recommended)"
 	echo "   2) TCP"
-	
-		PROTOCOL=udp
-		
-	
+	PROTOCOL=udp
 	echo
 	echo "What port do you want OpenVPN listening to?"
 	PORT=1194
