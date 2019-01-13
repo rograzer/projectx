@@ -189,7 +189,7 @@ else
 	
 		PROTOCOL=udp
 		
-	esac
+	
 	echo
 	echo "What port do you want OpenVPN listening to?"
 	PORT=1194
