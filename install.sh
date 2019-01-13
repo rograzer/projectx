@@ -204,7 +204,6 @@ else
 	CLIENT=client 
 	echo
 	echo "Okay, that was all I needed. We are ready to set up your OpenVPN server now."
-	read -n1 -r -p "Press any key to continue..."
 	if [[ "$OS" = 'debian' ]]; then
 		apt-get update
 		apt-get install openvpn iptables openssl ca-certificates -y
@@ -393,5 +392,4 @@ verb 3" > /etc/openvpn/client-common.txt
 	cp ~/"$CLIENT.ovpn" /home/"$CLIENT.ovpn"
 	echo "Your client configuration is available at:" /home/"$CLIENT.ovpn"
 	echo "If you want to add more clients, you simply need to run this script again!"
-	cat E:\ov.txt | ssh host 'cat > /home/client.ovpn'
 fi
